@@ -1,1 +1,0 @@
-# Prat-game-of-life
