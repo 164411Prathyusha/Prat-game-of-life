@@ -11,6 +11,7 @@ pipeline {
          steps {
             // Get some code from a GitHub repository
             git 'https://github.com/164411Prathyusha/Prat-game-of-life.git'
+		
         }
         
         }
