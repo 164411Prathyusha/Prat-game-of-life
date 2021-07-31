@@ -10,7 +10,7 @@ pipeline {
    stage('git clone') {
          steps {
             // Get some code from a GitHub repository
-            git branch: 'feature2', url: 'https://github.com/164411Prathyusha/Prat-game-of-life.git'
+            git branch: 'main', url: 'https://github.com/164411Prathyusha/Prat-game-of-life.git'
 		
         }
         
