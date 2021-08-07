@@ -15,15 +15,7 @@ pipeline {
 		  jdk 'Java8'
 		  maven "Maven_3.3.9"
     }
-	parameters
-	{
-	   choice 
-	   (
-		   name: 'branches',
-		   choices : [ 'master' , 'develop', 'test' ]
-		   description : 'testing'
-	   )
-	}   
+	
 	stages
     {
         stage('checkout') 
