@@ -21,7 +21,7 @@ pipeline {
 	   (
 		   name: 'branches',
 		   choices : [ 'master' , 'develop', 'test' ]
-		   description : 'testing')
+		   description : 'testing'
 	   )
 	stages
     {
