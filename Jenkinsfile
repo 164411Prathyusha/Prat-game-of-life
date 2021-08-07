@@ -23,6 +23,7 @@ pipeline {
 		   choices : [ 'master' , 'develop', 'test' ]
 		   description : 'testing'
 	   )
+	}   
 	stages
     {
         stage('checkout') 
