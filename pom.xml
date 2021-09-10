@@ -207,7 +207,9 @@
     </dependencies>
 
     <modules>
-        <module>gameoflife-deploy</module>
+        <module>gameoflife-build</module>
+        <module>gameoflife-core</module>
+        <module>gameoflife-web</module>
     </modules>
     <profiles>
         <profile>
