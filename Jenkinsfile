@@ -36,12 +36,6 @@ pipeline {
 				   '''
              }
 	    }
-		stage ('Deploy') 
-		{
-			 steps 
-			 {
-	                    sh "cp -Rf /var/lib/jenkins/workspace/pipeline-job/gameoflife-build/target/gameoflife-build-1.0-SNAPSHOT.jar /opt/tomcat/webapps"
-			 }
-        }			 
+			 
     }
 }
