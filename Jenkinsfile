@@ -2,10 +2,10 @@ pipeline {
     agent any
 	   environment 
 	   {
-		  sonar_url = 'http://172.31.4.216:9000/'
+		  sonar_url = 'http://34.68.82.31:9000/'
 		  sonar_username = 'admin'
 		  sonar_password = 'admin'
-		  nexusUrl = '172.31.4.216:8081'
+		  nexusUrl = '34.68.82.31:8081'
 		  artifact_version = '0.0.1'
 
         }
