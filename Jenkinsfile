@@ -74,5 +74,21 @@ pipeline {
       '''
         }  
     }
+	    stage ('Deploy to kubernetes')
+{
+          steps
+ {
+        script
+{
+            sh '''
+kubectl config use-context gke_authentic-ether-325306_us-central1-c_demo-prat
+            cd ${WORKSPACE}
+            kubectl delete -f kube/nginx-deployment.yaml
+            kubectl create -f kube/nginx-deployment.yaml
+            kubectl create -f kube/nginx-service.yaml
+'''
+         }  
+        }
+}
 }
 }
